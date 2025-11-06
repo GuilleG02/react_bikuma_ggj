@@ -1,42 +1,65 @@
-# Frontend Test Bikuma (React)
+# Bikuma - Sitio Web Corporativo
 
-Implementación con React 18 + Vite y SASS (SCSS). La UI replica la referencia "Proyectos Test.png" con secciones: header/navbar, hero, novedades, servicios, productos, proyectos y footer.
+Aplicación web desarrollada en React para Bikuma (Puntodis), empresa especializada en soluciones de accesibilidad universal.
 
-## Estructura
+## Descripción
 
-```
-ggj_prueba_bikuma/
-  └─ react-version/
-     ├─ public/
-     │  ├─ logo-puntodis.png (añádelo aquí)
-     │  └─ search.svg
-     ├─ src/
-     │  ├─ components/ (Navbar, Hero, SectionCards, Footer)
-     │  ├─ styles/ (_variables.scss, main.scss)
-     │  ├─ App.jsx
-     │  └─ main.jsx
-     ├─ index.html
-     └─ vite.config.js
-```
+Sitio web corporativo responsive que presenta los servicios, productos y proyectos de la empresa. Incluye secciones de navegación, hero, servicios, productos, proyectos, noticias y footer completo.
 
-## Ejecutar (React)
+## Tecnologías
+
+- **React 18.3.1** - Framework frontend
+- **Vite 5.4.8** - Build tool y servidor de desarrollo
+- **Sass** - Preprocesador CSS
+- **React DOM 18.3.1** - Renderizado
+
+## Requisitos
+
+- Node.js 16 o superior
+- npm 7 o superior
+
+## Instalación
 
 ```bash
-cd ggj_prueba_bikuma/react-version
-npm i
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
 npm run dev
+
 ```
 
-## Decisiones de diseño
-- Paleta aproximada a la referencia: azul primario para textos, rojo para CTA.
-- Tipografía: sistema (intercambiable por la del diseño en producción).
-- Layout en CSS Grid y Flex, con contenedor a 1200px.
-- Breakpoints: 1440/1024/768/480 px. Se prioriza 4→3→2→1 columnas.
-- Accesibilidad: etiquetas semánticas, `aria-label`, `h1/h2`, `role`, foco visible.
-- Microinteracciones: hover y elevación en cards y botones; sticky navbar.
-- Performance: imágenes representadas como cajas decorativas; fácil cambio a `<img loading="lazy">`.
+La aplicación estará disponible en `http://localhost:5173` durante el desarrollo.
 
-## Próximos pasos (si se desea ampliar)
-- Conectar datos reales (JSON/API) para las tarjetas.
-- Implementar routing y páginas internas.
-- Sustituir ilustraciones por SVGs/imagenes optimizadas.
+## Estructura del Proyecto
+
+```
+src/
+├── assets/          # Imágenes y recursos estáticos
+├── components/      # Componentes React
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── SectionCards.jsx
+│   ├── NewsCarousel.jsx
+│   ├── Services.jsx
+│   ├── Products.jsx
+│   ├── ProjectsCarousel.jsx
+│   ├── Companies.jsx
+│   └── Footer.jsx
+├── styles/          # Estilos SCSS
+│   ├── _variables.scss
+│   └── main.scss
+├── App.jsx          # Componente raíz
+└── main.jsx         # Punto de entrada
+```
+
+## Características
+
+- Diseño responsive (móvil, tablet, desktop)
+- Navegación con menú hamburguesa en móvil
+- Carruseles interactivos con auto-play
+- Optimización de imágenes y carga diferida
+
+## Scripts Disponibles
+
+- `npm run dev` - Inicia el servidor de desarrollo
