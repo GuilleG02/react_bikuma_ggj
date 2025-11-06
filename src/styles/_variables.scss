@@ -1,0 +1,24 @@
+$color-primary: #e31837; // rojo botón referencia
+$color-text: #0b2a4a; // azul oscuro
+$color-bg: #ffffff;
+$color-surface: #f5f7fb;
+
+$container-max: 1200px;
+
+$bp-xl: 1440px;
+$bp-lg: 1024px;
+$bp-md: 768px;
+$bp-sm: 480px;
+
+@mixin container {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin focus-ring {
+  outline: 2px solid rgba($color-primary, 0.8);
+  outline-offset: 2px;
+}
+
+

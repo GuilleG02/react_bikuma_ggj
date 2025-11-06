@@ -1,1 +1,0 @@
-# react_bikuma_ggj
