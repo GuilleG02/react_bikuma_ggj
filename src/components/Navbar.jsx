@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/logoBikuma.png';
+import logo from '../assets/LogoBikuma.png';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
