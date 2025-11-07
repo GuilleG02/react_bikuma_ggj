@@ -48,8 +48,8 @@ export default function NewsCarousel() {
               return (
                 <article key={`slide-${i}`} className="news-card">
                   <div className="news-card__bg" style={{ backgroundImage: `url(${s.img})` }} aria-hidden="true" />
-                  <div className="news-card__badge">{s.tag}</div>
                   <div className="news-card__content">
+                    <div className="news-card__badge">{s.tag}</div>
                     <h3>{s.title}</h3>
                   </div>
                 </article>
